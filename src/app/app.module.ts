@@ -3,6 +3,10 @@ import { NgModule } from '@angular/core';
 import { FormsModule } from '@angular/forms';
 import { HttpModule } from '@angular/http';
 
+//Rutas
+import { app_routing } from "./app.routes";
+
+//Componentes
 import { AppComponent } from './app.component';
 import { HeaderComponent } from './components/header/header.component';
 import { FooterComponent } from './components/footer/footer.component';
@@ -21,6 +25,7 @@ import { PortfolioItemComponent } from './components/portfolio-item/portfolio-it
   ],
   imports: [
     BrowserModule,
+    app_routing,
     FormsModule,
     HttpModule
   ],
