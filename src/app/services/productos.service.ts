@@ -17,8 +17,10 @@ export class ProductosService {
       this.http.get('https://paginaweb-d5cb2.firebaseio.com/productos_idx.json')
         .subscribe( res => {
         //  console.log( res.json());
+        //  setTimeout( ()=> {
           this.cargando = false;
           this.productos = res.json();
+      //  },1500)
 
         });
     }
