@@ -27,7 +27,7 @@ public carga_info(){
 public carga_sobre_nosotros(){
   this.http.get("https://paginaweb-d5cb2.firebaseio.com/equipo.json")
             .subscribe( data => {
-              console.log(data.json());
+              //console.log(data.json());
               this.cargada_sobre_nostros = true;
               this.equipo = data.json();
             });
