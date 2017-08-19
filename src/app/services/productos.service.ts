@@ -31,11 +31,11 @@ export class ProductosService {
   private filtrar_productos(termino:string){
     this.productos_filtrado = [];
     termino = termino.toLowerCase();
-    console.log( termino );
+    //console.log( termino );
     this.productos.forEach( prod => {
       if( prod.categoria.indexOf( termino ) >=0 || prod.titulo.toLowerCase().indexOf( termino ) >=0){
         this.productos_filtrado.push( prod );
-        console.log(prod);
+        //console.log(prod);
       }
     //  console.log( prod );
     });
