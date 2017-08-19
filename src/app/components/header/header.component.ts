@@ -13,7 +13,7 @@ constructor( public _is:InformacionService,
              private   router: Router) {}
 
 public buscar_producto( termino:string ){
-  console.log(termino);
+  //console.log(termino);
   this.router.navigate( ['buscar', termino]);
 }
 
